@@ -1,0 +1,38 @@
+.contact {
+  height: 100%;
+  padding-top: 10vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url("/dist/img/model-1.jpg") center top;
+  background-size: cover;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+  }
+  .item {
+    width: 80%;
+    background: lighten($primary-color, 10);
+    border-bottom: 3px solid $secondary-color;
+  }
+}
+.flx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
